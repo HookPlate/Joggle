@@ -11,6 +11,8 @@
 		543AA15D2A8652D80077A926 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA15C2A8652D80077A926 /* ContentView.swift */; };
 		543AA15F2A8652D80077A926 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543AA15E2A8652D80077A926 /* Assets.xcassets */; };
 		543AA1622A8652D80077A926 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 543AA1612A8652D80077A926 /* Preview Assets.xcassets */; };
+		543AA1692A8653D60077A926 /* LetterGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA1682A8653D60077A926 /* LetterGridView.swift */; };
+		543AA16B2A8656290077A926 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16A2A8656290077A926 /* LetterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		543AA15C2A8652D80077A926 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		543AA15E2A8652D80077A926 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		543AA1612A8652D80077A926 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		543AA1682A8653D60077A926 /* LetterGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterGridView.swift; sourceTree = "<group>"; };
+		543AA16A2A8656290077A926 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				543AA15A2A8652D80077A926 /* JoggleApp.swift */,
 				543AA15C2A8652D80077A926 /* ContentView.swift */,
+				543AA1682A8653D60077A926 /* LetterGridView.swift */,
+				543AA16A2A8656290077A926 /* LetterView.swift */,
 				543AA15E2A8652D80077A926 /* Assets.xcassets */,
 				543AA1602A8652D80077A926 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				543AA15D2A8652D80077A926 /* ContentView.swift in Sources */,
 				543AA15B2A8652D80077A926 /* JoggleApp.swift in Sources */,
+				543AA16B2A8656290077A926 /* LetterView.swift in Sources */,
+				543AA1692A8653D60077A926 /* LetterGridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
