@@ -21,7 +21,12 @@ struct LetterView: View {
             Text(letter)
                 .font(.system(size: 44).bold())
                 .foregroundStyle(isSelected ? .white : .primary)
-                //more modifiers to come.
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(isSelected ? selectionColor : Color.gray.opacity(0.25))
+            //although we have our main grid fixed this tile needs to be also be fixed.
+                .aspectRatio(1, contentMode: .fit)
+                //this overrides the default animation on that value:
+                .animation(nil, value: isSelected)
         }
     }
 }
