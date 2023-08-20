@@ -8,7 +8,8 @@
 import Foundation
  
 class Game: ObservableObject {
-    //keeps track of which player scored which words.
+    //keeps track of which player scored which words. Instead of stoppoing the players by telling them that the other player has found that word already (that would slow the game down a lot) we let them keep spelling but track who got them first.
+    //the string is the word, the Player is who found it first.
     var scores = [String: Player]()
     
     var dice = [
@@ -28,7 +29,7 @@ class Game: ObservableObject {
         ["E", "L", "R", "T", "T", "Y"],
         ["H", "L", "N", "N", "R", "Z"],
         ["H", "I", "M", "N", "U", "Qu"]
-    ].shuffled()
+    ]
     
     var player1 = Player(color: .mint)
     var player2 = Player(color: .orange)
@@ -39,6 +40,7 @@ class Game: ObservableObject {
     }
     
     func reset() {
+        //picks one random letter from each array in dice thus resetting the tiles var.
         tiles = dice.shuffled().map {
             $0.randomElement() ?? "X"
         }

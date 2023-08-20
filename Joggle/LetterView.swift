@@ -28,6 +28,7 @@ struct LetterView: View {
                 //this overrides the default animation on that value:
                 .animation(nil, value: isSelected)
         }
+        .buttonStyle(.plain)
     }
 }
 
