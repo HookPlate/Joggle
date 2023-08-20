@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct LetterGridView: View {
-    
+    //this gives us updating access to the selectedTiled @Published property amongst other things. 
     @ObservedObject var player: Player
     var game: Game
     
