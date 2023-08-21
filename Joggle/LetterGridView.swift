@@ -18,6 +18,8 @@ struct LetterGridView: View {
                    GridItem(.flexible()),
                    GridItem(.flexible())]
     
+    @State private var message: String? 
+    
     var body: some View {
         ZStack {
             LazyVGrid(columns: columns) {
@@ -29,14 +31,36 @@ struct LetterGridView: View {
                     //Again that closure is the last selectTile function from LetterView.
                     LetterView(letter: tile, isSelected: player.selectedTiles.contains(index), selectionColor: player.color) {
                         //above, make this be the players selected color if it's in their selected tiles array.
-                        //below is the call back from the trailing closure in LetterView (this triggers because LetterView is a button) but what we do when it triggers is call that trySelecting method in Player. _ is used because we don't currently care about the return value string. 
-                        _ = player.trySelecting(index, in: game )
+                        //below is the call back from the trailing closure in LetterView (this triggers because LetterView is a button) but what we do when it triggers is call that trySelecting method in Player. _ is used because we don't currently care about the return value string.
+                        //now we do care, by selecting we submit, by submitting we might get a message back, with a message it automatically shows.
+                        message = player.trySelecting(index, in: game )
                     }
                 }
+            }
+            .disabled(message != nil)
+            if let message {
+                VStack {
+                    Text(message)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.white)
+                        .font(.headline)
+                    Button("Ok", action: dismissMessage)
+                        .buttonStyle(.borderedProminent)
+                }
+                .padding()
+                .background(.black.opacity(0.8))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .transition(.scale)
             }
         }
         //make this think square at all times.
         .aspectRatio(1, contentMode: .fit)
+    }
+    
+    func dismissMessage() {
+        withAnimation {
+            message = nil
+        }
     }
 }
 
