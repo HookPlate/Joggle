@@ -15,6 +15,8 @@
 		543AA16B2A8656290077A926 /* LetterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16A2A8656290077A926 /* LetterView.swift */; };
 		543AA16D2A866C920077A926 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16C2A866C920077A926 /* Player.swift */; };
 		543AA16F2A866F3D0077A926 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16E2A866F3D0077A926 /* Game.swift */; };
+		546098802A93395C00B9F6BC /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460987F2A93395C00B9F6BC /* Dictionary.swift */; };
+		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		543AA16A2A8656290077A926 /* LetterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetterView.swift; sourceTree = "<group>"; };
 		543AA16C2A866C920077A926 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		543AA16E2A866F3D0077A926 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		5460987F2A93395C00B9F6BC /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				543AA15C2A8652D80077A926 /* ContentView.swift */,
 				543AA16C2A866C920077A926 /* Player.swift */,
 				543AA16E2A866F3D0077A926 /* Game.swift */,
+				54BD8DC92A9215CC0015701C /* dictionary.txt */,
+				5460987F2A93395C00B9F6BC /* Dictionary.swift */,
 				543AA1682A8653D60077A926 /* LetterGridView.swift */,
 				543AA16A2A8656290077A926 /* LetterView.swift */,
 				543AA15E2A8652D80077A926 /* Assets.xcassets */,
@@ -137,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */,
 				543AA1622A8652D80077A926 /* Preview Assets.xcassets in Resources */,
 				543AA15F2A8652D80077A926 /* Assets.xcassets in Resources */,
 			);
@@ -153,6 +160,7 @@
 				543AA16F2A866F3D0077A926 /* Game.swift in Sources */,
 				543AA15B2A8652D80077A926 /* JoggleApp.swift in Sources */,
 				543AA16B2A8656290077A926 /* LetterView.swift in Sources */,
+				546098802A93395C00B9F6BC /* Dictionary.swift in Sources */,
 				543AA16D2A866C920077A926 /* Player.swift in Sources */,
 				543AA1692A8653D60077A926 /* LetterGridView.swift in Sources */,
 			);

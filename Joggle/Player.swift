@@ -63,6 +63,20 @@ class Player: ObservableObject {
     }
     
     func submit(in game: Game) -> String? {
+        //Form a single word by joining all the player’s tiles into a single string.
+        let word = selectedTiles.map { game.tiles[$0] }.joined().lowercased()
+        //Checking they haven’t used that word before.
+        guard usedWords.contains(word) == false else  {
+            return "You used that word already"
+        }
+        //Checking that the dictionary actually contains that word.
+        if Dictionary.contains(word) {
+            //If both of those are true, we’ll add the word to the player’s usedWords array, then clear their selectedTiles array so they can start spelling a new word.
+            usedWords.append(word)
+            selectedTiles.removeAll()
+        } else {
+            return "That isn't a valid word"
+        }
         return nil
     }
 }
