@@ -4,12 +4,12 @@
 //
 //  Created by robin tetley on 11/08/2023.
 //
-
+import Combine
 import Foundation
  
 class Game: ObservableObject {
     //keeps track of which player scored which words. Instead of stoppoing the players by telling them that the other player has found that word already (that would slow the game down a lot) we let them keep spelling but track who got them first.
-    //the string is the word, the Player is who found it first.
+    //the string is the word that was found, the Player is who found it first.
     var scores = [String: Player]()
     
     var dice = [
@@ -35,6 +35,10 @@ class Game: ObservableObject {
     var player2 = Player(color: .orange)
     var tiles = [String]()
     
+    @Published var timeRemaining = 0.0
+    @Published var showingResults = false
+    private var timer: AnyCancellable?
+    
     init() {
         reset()
     }
@@ -47,5 +51,36 @@ class Game: ObservableObject {
         scores.removeAll()
         player1.reset()
         player2.reset()
+        
+        //tell our timer to fire every second, and set timeRemaining to 3 minutes
+        timer = Timer
+            .publish(every: 1, on: .main, in: .common)
+            .autoconnect()
+            .sink(receiveValue: update)
+        
+        timeRemaining = 180
     }
+    //subtract a second from our timer until finally we run out of time and show the results
+    func update(_ newTime: Date) {
+        // if this is called when we're showing results, do nothing
+        guard showingResults == false else { return }
+        
+        if timeRemaining > 0 {
+            timeRemaining -= 1
+        } else {
+            //the game is over
+            showingResults = true
+        }
+    }
+    
+//track which player found a word first, which means inserting a word into the scores dictionary only if it isn’t there already
+    func add(_ word: String, for player: Player) {
+        if scores[word] == nil {
+            scores[word] = player
+        }
+    }
+    
+//the above: we need to call it in one very precise place: inside the submit() method of our Player class, just next to where we use usedWords.append(word) to let each player track their own words.
+
+    
 }

@@ -73,6 +73,9 @@ class Player: ObservableObject {
         if Dictionary.contains(word) {
             //If both of those are true, we’ll add the word to the player’s usedWords array, then clear their selectedTiles array so they can start spelling a new word.
             usedWords.append(word)
+            //Again, yes: this means we’re tracking used words in two places. However, the context is slightly different: we track individual player’s words so we can tell them when they have used a word more than once, but it would be annoying to do that for words the opponent found because it would slow down the game too much.
+
+            game.add(word, for: self)
             selectedTiles.removeAll()
         } else {
             return "That isn't a valid word"
