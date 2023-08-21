@@ -16,6 +16,9 @@
 		543AA16D2A866C920077A926 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16C2A866C920077A926 /* Player.swift */; };
 		543AA16F2A866F3D0077A926 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543AA16E2A866F3D0077A926 /* Game.swift */; };
 		546098802A93395C00B9F6BC /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5460987F2A93395C00B9F6BC /* Dictionary.swift */; };
+		546098822A9376D600B9F6BC /* String-Scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098812A9376D600B9F6BC /* String-Scoring.swift */; };
+		546098842A9378D200B9F6BC /* PlayerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098832A9378D200B9F6BC /* PlayerResults.swift */; };
+		546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098852A937CFE00B9F6BC /* ResultsView.swift */; };
 		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +33,9 @@
 		543AA16C2A866C920077A926 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		543AA16E2A866F3D0077A926 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		5460987F2A93395C00B9F6BC /* Dictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
+		546098812A9376D600B9F6BC /* String-Scoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Scoring.swift"; sourceTree = "<group>"; };
+		546098832A9378D200B9F6BC /* PlayerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerResults.swift; sourceTree = "<group>"; };
+		546098852A937CFE00B9F6BC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,9 @@
 			children = (
 				543AA15A2A8652D80077A926 /* JoggleApp.swift */,
 				543AA15C2A8652D80077A926 /* ContentView.swift */,
+				546098812A9376D600B9F6BC /* String-Scoring.swift */,
+				546098832A9378D200B9F6BC /* PlayerResults.swift */,
+				546098852A937CFE00B9F6BC /* ResultsView.swift */,
 				543AA16C2A866C920077A926 /* Player.swift */,
 				543AA16E2A866F3D0077A926 /* Game.swift */,
 				54BD8DC92A9215CC0015701C /* dictionary.txt */,
@@ -156,11 +165,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				546098822A9376D600B9F6BC /* String-Scoring.swift in Sources */,
 				543AA15D2A8652D80077A926 /* ContentView.swift in Sources */,
 				543AA16F2A866F3D0077A926 /* Game.swift in Sources */,
+				546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */,
 				543AA15B2A8652D80077A926 /* JoggleApp.swift in Sources */,
 				543AA16B2A8656290077A926 /* LetterView.swift in Sources */,
 				546098802A93395C00B9F6BC /* Dictionary.swift in Sources */,
+				546098842A9378D200B9F6BC /* PlayerResults.swift in Sources */,
 				543AA16D2A866C920077A926 /* Player.swift in Sources */,
 				543AA1692A8653D60077A926 /* LetterGridView.swift in Sources */,
 			);
