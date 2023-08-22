@@ -33,6 +33,9 @@ struct ResultsView: View {
             if player === game.player1 {
                 player1Score += word.score
                 player1Words.append(word)
+            } else {
+                player2Score += word.score
+                player2Words.append(word)
             }
         }
         //sort the resulting words

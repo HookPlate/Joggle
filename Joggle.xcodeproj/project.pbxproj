@@ -19,6 +19,7 @@
 		546098822A9376D600B9F6BC /* String-Scoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098812A9376D600B9F6BC /* String-Scoring.swift */; };
 		546098842A9378D200B9F6BC /* PlayerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098832A9378D200B9F6BC /* PlayerResults.swift */; };
 		546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098852A937CFE00B9F6BC /* ResultsView.swift */; };
+		54793E642A94A1ED00FCB758 /* es_ANY.dic in Resources */ = {isa = PBXBuildFile; fileRef = 54793E632A94A1ED00FCB758 /* es_ANY.dic */; };
 		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		546098812A9376D600B9F6BC /* String-Scoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Scoring.swift"; sourceTree = "<group>"; };
 		546098832A9378D200B9F6BC /* PlayerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerResults.swift; sourceTree = "<group>"; };
 		546098852A937CFE00B9F6BC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
+		54793E632A94A1ED00FCB758 /* es_ANY.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es_ANY.dic; sourceTree = "<group>"; };
 		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +79,7 @@
 				543AA16C2A866C920077A926 /* Player.swift */,
 				543AA16E2A866F3D0077A926 /* Game.swift */,
 				54BD8DC92A9215CC0015701C /* dictionary.txt */,
+				54793E632A94A1ED00FCB758 /* es_ANY.dic */,
 				5460987F2A93395C00B9F6BC /* Dictionary.swift */,
 				543AA1682A8653D60077A926 /* LetterGridView.swift */,
 				543AA16A2A8656290077A926 /* LetterView.swift */,
@@ -155,6 +158,7 @@
 				54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */,
 				543AA1622A8652D80077A926 /* Preview Assets.xcassets in Resources */,
 				543AA15F2A8652D80077A926 /* Assets.xcassets in Resources */,
+				54793E642A94A1ED00FCB758 /* es_ANY.dic in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

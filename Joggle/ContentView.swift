@@ -48,6 +48,9 @@ struct ContentView: View {
             .frame(height: 40)
             .background(.indigo)
         }
+        .sheet(isPresented: $game.showingResults, onDismiss: game.reset) {
+            ResultsView(game: game)
+        }
     }
 }
 
