@@ -10,7 +10,11 @@ import Foundation
 enum Dictionary {
     //will try and find the file in our bundle, try and load it, if that works, break it up into new lines and send it back
     private static let contents: Set<String> = {
-        guard let url = Bundle.main.url(forResource: "dictionary", withExtension: "txt") else {
+//        guard let url = Bundle.main.url(forResource: "dictionary", withExtension: "txt") else {
+//            fatalError("Cannot find dictionary.txt")
+//        }
+        
+        guard let url = Bundle.main.url(forResource: "es_ANY", withExtension: "dic") else {
             fatalError("Cannot find dictionary.txt")
         }
         
