@@ -45,11 +45,13 @@ struct ResultsView: View {
         
         //calculate who won
         if player1Score > player2Score {
-            result = "Player 1 wins!"
+//            result = "Player 1 wins!"
+            result = "Jugador 1 gana!"
         } else if player1Score < player2Score {
-            result = "Player 2 wins!"
+           // result = "Player 2 wins!"
+            result = "Jugador 2 gana!"
         } else {
-            result = "It's a draw!"
+            result = "Empate!"
         }
     }
 }

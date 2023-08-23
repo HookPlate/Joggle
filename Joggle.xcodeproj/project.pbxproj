@@ -20,6 +20,7 @@
 		546098842A9378D200B9F6BC /* PlayerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098832A9378D200B9F6BC /* PlayerResults.swift */; };
 		546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098852A937CFE00B9F6BC /* ResultsView.swift */; };
 		54793E642A94A1ED00FCB758 /* es_ANY.dic in Resources */ = {isa = PBXBuildFile; fileRef = 54793E632A94A1ED00FCB758 /* es_ANY.dic */; };
+		547E7B0C2A9685DF004CA478 /* es.txt in Resources */ = {isa = PBXBuildFile; fileRef = 547E7B0B2A9685DF004CA478 /* es.txt */; };
 		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		546098832A9378D200B9F6BC /* PlayerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerResults.swift; sourceTree = "<group>"; };
 		546098852A937CFE00B9F6BC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		54793E632A94A1ED00FCB758 /* es_ANY.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es_ANY.dic; sourceTree = "<group>"; };
+		547E7B0B2A9685DF004CA478 /* es.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es.txt; sourceTree = "<group>"; };
 		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 				543AA16E2A866F3D0077A926 /* Game.swift */,
 				54BD8DC92A9215CC0015701C /* dictionary.txt */,
 				54793E632A94A1ED00FCB758 /* es_ANY.dic */,
+				547E7B0B2A9685DF004CA478 /* es.txt */,
 				5460987F2A93395C00B9F6BC /* Dictionary.swift */,
 				543AA1682A8653D60077A926 /* LetterGridView.swift */,
 				543AA16A2A8656290077A926 /* LetterView.swift */,
@@ -155,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547E7B0C2A9685DF004CA478 /* es.txt in Resources */,
 				54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */,
 				543AA1622A8652D80077A926 /* Preview Assets.xcassets in Resources */,
 				543AA15F2A8652D80077A926 /* Assets.xcassets in Resources */,
@@ -315,6 +319,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,6 +349,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

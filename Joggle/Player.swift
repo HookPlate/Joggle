@@ -67,7 +67,8 @@ class Player: ObservableObject {
         let word = selectedTiles.map { game.tiles[$0] }.joined().lowercased()
         //Checking they haven’t used that word before.
         guard usedWords.contains(word) == false else  {
-            return "You used that word already"
+          //  return "You used that word already"
+            return "Ya usaste esa palabra"
         }
         //Checking that the dictionary actually contains that word.
         if Dictionary.contains(word) {
@@ -78,7 +79,7 @@ class Player: ObservableObject {
             game.add(word, for: self)
             selectedTiles.removeAll()
         } else {
-            return "That isn't a valid word"
+            return "Esta palabra no la conozco"
         }
         return nil
     }

@@ -19,7 +19,8 @@ struct PlayerResults: View {
     var body: some View {
         Section {
             if words.isEmpty {
-                Text("None")
+                //Text("None")
+                Text("Ninguno")
             } else {
                 //since in boggle you can't have duplicate words using self for id is fine here.
                 ForEach(words, id: \.self) { word in
@@ -27,10 +28,12 @@ struct PlayerResults: View {
                 }
             }
         } header: {
-            Text("Player \(number) score")
+//            Text("Player \(number) score")
+            Text("Jugador \(number) resultado")
         } footer: {
             //he special “inflect” Markdown syntax tells SwiftUI we want the string to say “0 points”, “1 point”, “2 points”, etc – it pluralizes the string correctly for us.
-            Text("Total: ^[\(score) points](inflect: true)")
+            //Text("Total: ^[\(score) points](inflect: true)")
+            Text("Total: ^[\(score) puntos](inflect: true)")
         }
     }
 }
