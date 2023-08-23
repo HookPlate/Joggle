@@ -21,6 +21,7 @@
 		546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546098852A937CFE00B9F6BC /* ResultsView.swift */; };
 		54793E642A94A1ED00FCB758 /* es_ANY.dic in Resources */ = {isa = PBXBuildFile; fileRef = 54793E632A94A1ED00FCB758 /* es_ANY.dic */; };
 		547E7B0C2A9685DF004CA478 /* es.txt in Resources */ = {isa = PBXBuildFile; fileRef = 547E7B0B2A9685DF004CA478 /* es.txt */; };
+		547E7B0E2A968CA1004CA478 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E7B0D2A968CA1004CA478 /* GameView.swift */; };
 		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		546098852A937CFE00B9F6BC /* ResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsView.swift; sourceTree = "<group>"; };
 		54793E632A94A1ED00FCB758 /* es_ANY.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es_ANY.dic; sourceTree = "<group>"; };
 		547E7B0B2A9685DF004CA478 /* es.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es.txt; sourceTree = "<group>"; };
+		547E7B0D2A968CA1004CA478 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,6 +77,7 @@
 			children = (
 				543AA15A2A8652D80077A926 /* JoggleApp.swift */,
 				543AA15C2A8652D80077A926 /* ContentView.swift */,
+				547E7B0D2A968CA1004CA478 /* GameView.swift */,
 				546098812A9376D600B9F6BC /* String-Scoring.swift */,
 				546098832A9378D200B9F6BC /* PlayerResults.swift */,
 				546098852A937CFE00B9F6BC /* ResultsView.swift */,
@@ -178,6 +181,7 @@
 				543AA16F2A866F3D0077A926 /* Game.swift in Sources */,
 				546098862A937CFE00B9F6BC /* ResultsView.swift in Sources */,
 				543AA15B2A8652D80077A926 /* JoggleApp.swift in Sources */,
+				547E7B0E2A968CA1004CA478 /* GameView.swift in Sources */,
 				543AA16B2A8656290077A926 /* LetterView.swift in Sources */,
 				546098802A93395C00B9F6BC /* Dictionary.swift in Sources */,
 				546098842A9378D200B9F6BC /* PlayerResults.swift in Sources */,
