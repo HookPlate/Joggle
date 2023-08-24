@@ -9,17 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
- 
+    @State private var showingSheet = false
     
     var body: some View {
-        NavigationStack {
-            VStack {
-                NavigationLink {
-                    GameView()
-                } label: {
-                    Label("Show GameView", systemImage: "globe")
-                }
-            }
+        Button("Show Sheet") {
+            showingSheet.toggle()
+        }
+        .sheet(isPresented: $showingSheet) {
+            GameView()
         }
     }
 }
