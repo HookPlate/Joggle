@@ -22,34 +22,39 @@ struct GameView: View {
     
     var body: some View {
         //places some space between our boards.
-        ZStack {
-            VStack(spacing: 60) {
-                LetterGridView(player: game.player2, game: game)
-                    .rotationEffect(.degrees(180))
-                LetterGridView(player: game.player1, game: game)
+        GeometryReader { geo in
+            ZStack {
+                VStack(spacing: 50) {
+                    LetterGridView(player: game.player2, game: game)
+                        .rotationEffect(.degrees(180))
+                    LetterGridView(player: game.player1, game: game)
+                }
+                        .frame(width: geo.size.width / 1.015 ,height: geo.size.height / 1.015)
+  
+                .padding(10)
+                
+                HStack {
+                    Spacer()
+                    
+                    timeRemainingText
+                        .rotationEffect(.degrees(180))
+                    
+                    Spacer()
+                    
+                    timeRemainingText
+                    
+                    Spacer()
+                }
+                .foregroundStyle(.white)
+                .font(.system(size: 36).monospacedDigit())
+                .frame(maxWidth: .infinity)
+                .frame(height: 40)
+                .background(.indigo)
             }
-            .padding(10)
-            
-            HStack {
-                Spacer()
-                
-                timeRemainingText
-                    .rotationEffect(.degrees(180))
-                
-                Spacer()
-                
-                timeRemainingText
-                
-                Spacer()
+//            .frame(width: geo.size.width / 1.05 ,height: geo.size.height / 1.05)
+            .sheet(isPresented: $game.showingResults, onDismiss: game.reset) {
+                ResultsView(game: game)
             }
-            .foregroundStyle(.white)
-            .font(.system(size: 36).monospacedDigit())
-            .frame(maxWidth: .infinity)
-            .frame(height: 40)
-            .background(.indigo)
-        }
-        .sheet(isPresented: $game.showingResults, onDismiss: game.reset) {
-            ResultsView(game: game)
         }
     }
 }
