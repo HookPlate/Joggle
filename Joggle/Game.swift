@@ -57,6 +57,8 @@ class Game: ObservableObject {
     @Published var showingResults = false
     private var timer: AnyCancellable?
     
+    @Published var spanishVersion = false
+    
     init() {
         reset()
     }
