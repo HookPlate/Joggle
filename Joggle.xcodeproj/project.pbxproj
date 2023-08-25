@@ -23,6 +23,7 @@
 		547E7B0C2A9685DF004CA478 /* es.txt in Resources */ = {isa = PBXBuildFile; fileRef = 547E7B0B2A9685DF004CA478 /* es.txt */; };
 		547E7B0E2A968CA1004CA478 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547E7B0D2A968CA1004CA478 /* GameView.swift */; };
 		54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 54BD8DC92A9215CC0015701C /* dictionary.txt */; };
+		54F0DA932A9924D400B1B7D6 /* spain@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 54F0DA922A9924D400B1B7D6 /* spain@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		547E7B0B2A9685DF004CA478 /* es.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = es.txt; sourceTree = "<group>"; };
 		547E7B0D2A968CA1004CA478 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		54BD8DC92A9215CC0015701C /* dictionary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dictionary.txt; sourceTree = "<group>"; };
+		54F0DA922A9924D400B1B7D6 /* spain@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "spain@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				5460987F2A93395C00B9F6BC /* Dictionary.swift */,
 				543AA1682A8653D60077A926 /* LetterGridView.swift */,
 				543AA16A2A8656290077A926 /* LetterView.swift */,
+				54F0DA922A9924D400B1B7D6 /* spain@3x.png */,
 				543AA15E2A8652D80077A926 /* Assets.xcassets */,
 				543AA1602A8652D80077A926 /* Preview Content */,
 			);
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				547E7B0C2A9685DF004CA478 /* es.txt in Resources */,
+				54F0DA932A9924D400B1B7D6 /* spain@3x.png in Resources */,
 				54BD8DCA2A9215CC0015701C /* dictionary.txt in Resources */,
 				543AA1622A8652D80077A926 /* Preview Assets.xcassets in Resources */,
 				543AA15F2A8652D80077A926 /* Assets.xcassets in Resources */,
