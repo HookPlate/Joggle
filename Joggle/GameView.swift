@@ -40,6 +40,17 @@ struct GameView: View {
                         .rotationEffect(.degrees(180))
                     
                     Spacer()
+                    Button {
+                        game.reset()
+                    } label: {
+                        Image(systemName: "arrow.clockwise")
+                            .frame(maxWidth: 30, maxHeight: 30)
+                    }
+                    
+                    .buttonStyle(.borderedProminent)
+                    .tint(.mint)
+                    //.frame(maxWidth: 10, maxHeight: 10)
+                    Spacer()
                     
                     timeRemainingText
                     
