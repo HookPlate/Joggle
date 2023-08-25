@@ -11,7 +11,7 @@ class Game: ObservableObject {
     //keeps track of which player scored which words. Instead of stoppoing the players by telling them that the other player has found that word already (that would slow the game down a lot) we let them keep spelling but track who got them first.
     //the string is the word that was found, the Player is who found it first.
     var scores = [String: Player]()
-    
+    //okay
 //    var dice = [
 //        ["A", "A", "E", "E", "G", "N"],
 //        ["A", "B", "B", "J", "O", "O"],
@@ -29,7 +29,7 @@ class Game: ObservableObject {
 //        ["E", "L", "R", "T", "T", "Y"],
 //        ["H", "L", "N", "N", "R", "Z"],
 //        ["H", "I", "M", "N", "U", "Qu"]
-//    ]
+//    ]...
     var dice = [
         ["A", "R", "H", "S", "D", "E"],
         ["F", "U", "A", "A", "R", "B"],
