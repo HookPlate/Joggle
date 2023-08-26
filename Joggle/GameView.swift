@@ -40,15 +40,19 @@ struct GameView: View {
                         .rotationEffect(.degrees(180))
                     
                     Spacer()
+                    //reset button in middle
                     Button {
                         game.reset()
                     } label: {
                         Image(systemName: "arrow.clockwise")
-                            .frame(maxWidth: 30, maxHeight: 30)
+                        //.frame(maxWidth: 30, maxHeight: 30)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(height: 20)
                     }
-                    
                     .buttonStyle(.borderedProminent)
                     .tint(.mint)
+                    //.controlSize(.)
                     //.frame(maxWidth: 10, maxHeight: 10)
                     Spacer()
                     

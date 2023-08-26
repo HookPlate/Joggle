@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack(spacing: 30) {
+                //both need refactoring out
                 VStack {
                     Text("Juega en Español")
                         .multilineTextAlignment(.center)
